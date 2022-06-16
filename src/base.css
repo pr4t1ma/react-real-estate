@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-red-500;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  h1 {
+    @apply font-bold mb-1 text-2xl;
+    font-family: 'Raleway', sans-serif;
+  }
+  h2 {
+    @apply font-bold mb-1 text-xl;
+    font-family: 'Raleway', sans-serif;
+  }
+  h3 {
+    @apply font-bold mb-1 text-lg;
+    font-family: 'Raleway', sans-serif;
+  }
+  h4 {
+    @apply font-bold mb-1 text-base;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@layer components {
+  .menu > li > .sub-menu {
+    @apply hidden absolute top-full left-0 w-full p-10 bg-pink-600 justify-between gap-2;
+  }
+  .menu > li:hover > .sub-menu {
+    @apply block;
+  }
+}
