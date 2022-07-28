@@ -83,7 +83,7 @@ const Menu = () => {
 
   return (
     <div
-      className="main-menu flex justify-between relative flex-1"
+      className="main-menu flex-col sm:first-line:file:flex-1 md:flex-row md:justify-between md:relative md:first-line:file:flex-1"
       id="main-menu"
     >
       <a href className="close hidden">
